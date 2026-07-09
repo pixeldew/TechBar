@@ -1,17 +1,26 @@
 package com.model;
 
 public class UsersModel {
-
-	private int id ;
+	private Integer id;
 	private String userName;
 	private String phone;
 	private String problemDescription;
 	private String status;
 	
-	public int getId() {
+	 public UsersModel() {
+	    }
+	
+	public UsersModel(Integer id, String userName, String phone, String problemDescription, String status) {
+		this.id=id;
+		this.userName= userName;
+		this.phone= phone;
+		this.problemDescription= problemDescription;
+		this.status= status;
+	}
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getUserName() {
@@ -38,6 +47,5 @@ public class UsersModel {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
 	
 }
